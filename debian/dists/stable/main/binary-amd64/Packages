@@ -4,10 +4,10 @@ Architecture: amd64
 Maintainer: JumpyVi <jumpyvi@outlook.com>
 Depends: dracut, ostree, libostree-dev
 Filename: pool/main/bootc_amd64.deb
-Size: 51795196
-MD5sum: fab865e6938504b9110a76778aa43904
-SHA1: b1bd06ab2d3914ce21513e03af7079fdb031500e
-SHA256: 800faa8e901b877cc703018a42acb1682394898563378d63f13e71754a94955e
+Size: 51786480
+MD5sum: d83a2f08e1f42e7e9af88d35edfdca2c
+SHA1: e55f8f8ff51d76402db20fa59d04aeacff239efe
+SHA256: 5964f9de216adb37ad88aa3724af294c7562bef1cec5d63afdef6f65c9e23a4c
 Section: admin
 Priority: optional
 Description: bootc
