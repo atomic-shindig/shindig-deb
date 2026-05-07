@@ -19,25 +19,41 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y dpkg-dev apt-utils
 
+      - name: Import GPG Key
+        uses: crazy-max/ghaction-import-gpg@v6
+        with:
+          gpg_private_key: ${{ secrets.GPG_PRIVATE_KEY }}
+          passphrase: ${{ secrets.GPG_PASSPHRASE }}
+
       - name: Build .deb package and construct Repo
         run: |
+          # 1. Build the package
           DOCKER_BUILDKIT=1 docker build -f pkgs/bootc.Containerfile --output type=local,dest=./docker-output .
           
+          # 2. Setup directory structure
           mkdir -p ./apt-repo/debian/dists/stable/main/binary-amd64
           mkdir -p ./apt-repo/debian/pool/main
           
           mv ./docker-output/*.deb ./apt-repo/debian/pool/main/
 
           cd ./apt-repo
-          
           dpkg-scanpackages debian/pool/main /dev/null > debian/dists/stable/main/binary-amd64/Packages
-          
           gzip -9k debian/dists/stable/main/binary-amd64/Packages
           
-          apt-ftparchive release debian/dists/stable > debian/dists/stable/Release
+          apt-ftparchive \
+            -o APT::FTPArchive::Release::Origin="jumpyvi" \
+            -o APT::FTPArchive::Release::Label="Bootc-Deb" \
+            -o APT::FTPArchive::Release::Suite="stable" \
+            -o APT::FTPArchive::Release::Codename="stable" \
+            -o APT::FTPArchive::Release::Architectures="amd64" \
+            -o APT::FTPArchive::Release::Components="main" \
+            release debian/dists/stable > debian/dists/stable/Release
+
+          gpg --yes --clearsign --digest-algo SHA256 -o debian/dists/stable/InRelease debian/dists/stable/Release
+          gpg --yes -abs --digest-algo SHA256 -o debian/dists/stable/Release.gpg debian/dists/stable/Release
 
       - name: Deploy to GitHub Pages
         uses: jamesives/github-pages-deploy-action@v4
         with:
           branch: gh-pages
-          folder: apt-repo # This ensures ONLY your repository files are published
+          folder: apt-repo
