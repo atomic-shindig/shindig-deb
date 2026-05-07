@@ -1,0 +1,42 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
+Architectures: amd64
+Codename: stable
+Components: main
+Date: Thu, 07 May 2026 17:38:51 +0000
+Label: Bootc-Deb
+Origin: jumpyvi
+Suite: stable
+MD5Sum:
+ da8c98450775f8e4856cd10063bc86b9              140 Release
+ 7cac379f199204eee9a103e8b428df34              390 main/binary-amd64/Packages
+ 8d868426bc8644f4be5c2bc18bc37901              319 main/binary-amd64/Packages.gz
+SHA1:
+ 3b37d82f801d35caf340a849bf074490bf9dd599              140 Release
+ 90472c6858ec2f48653856f4caa54e0adbeffa65              390 main/binary-amd64/Packages
+ 92acd156c35ea978df4d00794f15fde2297c4b42              319 main/binary-amd64/Packages.gz
+SHA256:
+ a0b5a09e6941c2afd962f4c43a7ba616309cc92be5e05657f0f67fd767e876ee              140 Release
+ f0e42fef8b9664b47eabd4050f67ba9941c1320ecb60e0bcc90759c430bef6eb              390 main/binary-amd64/Packages
+ 85790d5f202257e837bfd372b014375dba1983625f2a612b95ac0fc8c1348029              319 main/binary-amd64/Packages.gz
+SHA512:
+ a2040ff80f70b6629e60e5a718b92fffee67925a7cc79d9c8ce85f9f3a0b803c44a4904da7e23576ad173893224d6459d198fafa95494ff03890b8503fa2681e              140 Release
+ e1eb56ff7b6845e2c0065542f8158e2b123061cbf1d2114df50c1576ea8667aed8e422bcb4558e94220e8e5403416242ed8aa8fe3599550f0c8be0e49d966162              390 main/binary-amd64/Packages
+ 08d4244d25f0e791d12179f5c9e43473abaa89ac03b20d336b11da49110732b4bf75195c36f9741ad96618cd14d381db3e020ce8aee7b6b894993277a563eb9a              319 main/binary-amd64/Packages.gz
+-----BEGIN PGP SIGNATURE-----
+
+iQIzBAEBCAAdFiEE6+KIJT2PeFN36ebL2rOStQt7owEFAmn8zisACgkQ2rOStQt7
+owEG9xAA3CrlF/p7qJeF6CUva8f6L3+f119Oi6id5sEHvOheflke3WEefRfvtPsO
+Wvxo80I2ipMp3rjf8pQAOjvF66CVzAm9z9WaxCMRCX5sFLwlF58hMhXIp1+eutHo
+yDU9KAFVNZ6sdWapx/4YwEosbqW2+dKpFxnuskmMrdWIUhJLdBc8yjvhw2nTIxOH
+JrjuFh5Lyvslls5VUh/+VhWqiBdNr7J/WPy4UGwru/pN71xX1QPb2DZtWaxD29P0
+xn/hCuSp1mvShWrvNolvdGEx6UookaMf9tiaeENmiuENiTRMHIQU7ROFwVNDRmWG
+Vgtnkz0ZfpDiiUV3cuUClERWI6Stw9PJj1dHWRoo7mM/w+S9upPxUBBHHz26ms18
+bb2yE7w0xvNm+juq65vVH7/oEgpuPZYmWudXHvmOLiIn4DEDOgfJxhIGX9thuT0q
+6cXUQDECK//oaoobAlrufuVItPOxDmI9ApMi780CKiMC83fGzwXrrQVtZy7kl7gB
+nXtbzy7cRWHvOtflum1McdesCWs06xowAGzVvHmwQJN8mkwFAFN9B5Hq5qbZiwBl
+9vI6nx+L72h3sh90Z1v7SsDJgG7adk1tIwdb8QdcTjuAnzg+Gv9jWTk4YtGLpx/V
+5PoM6vim9xDFfygJ2NaSh3X51/aN4gsDPFGqucnWvKWPgXaXIxI=
+=7YlI
+-----END PGP SIGNATURE-----
