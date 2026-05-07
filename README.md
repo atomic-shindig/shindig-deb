@@ -1,7 +1,4 @@
-# Available packages
-> Updated every two weeks, from latest git release
-- Bootc
-- Uupd (Ublue updater)
+Debian/Ubuntu repo for the bootc package
 
 # Compatibility
 - Debian
