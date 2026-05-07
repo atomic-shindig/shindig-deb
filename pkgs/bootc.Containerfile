@@ -63,7 +63,8 @@ RUN mkdir -p /pkg/usr/lib/dracut/dracut.conf.d && \
     'systemdsystemunitdir=/usr/lib/systemd/system' \
     > /pkg/usr/lib/dracut/dracut.conf.d/30-bootc.conf
 
-RUN dpkg-deb --build /pkg /out/bootc_$(dpkg --print-architecture).deb
+RUN mkdir -p /out && \
+    dpkg-deb --build /pkg /out/bootc_$(dpkg --print-architecture).deb
 
 FROM scratch AS export
 COPY --from=builder /out /
