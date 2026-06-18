@@ -13,15 +13,15 @@ Priority: optional
 Description: bootc
 
 Package: foot-git
-Version: 43566b6
+Version: 43d2d97
 Architecture: amd64
 Maintainer: JumpyVi <jumpyvi@outlook.com>
 Depends: libwayland-client0, libxkbcommon0, libfontconfig1, libfreetype6, libpixman-1-0, libutf8proc3
 Filename: pool/main/foot-git_amd64.deb
-Size: 378332
-MD5sum: 15b1aa8b01a4ba678bd1c2b80188f1ed
-SHA1: 7b9e0681c7972519c9187eef7695282d63c7cdf5
-SHA256: 6361bd59b945a9ac42f5f5b3101bcda057df576888132b8d56a1bd6955429670
+Size: 379292
+MD5sum: 58aa01c822042dbd91ef6ed861c906ec
+SHA1: c66784c4437c1c9c84e993133136aed73cdb62ea
+SHA256: d983df4699b2d71ac43b6f2f32a69f370f8f9c1c05e43e5c288653cbeff19b9a
 Section: x11
 Priority: optional
 Description: A fast, lightweight and minimalistic Wayland terminal emulator (git version)
