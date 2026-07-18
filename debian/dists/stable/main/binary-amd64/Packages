@@ -18,10 +18,10 @@ Architecture: amd64
 Maintainer: JumpyVi <jumpyvi@outlook.com>
 Depends: libwayland-client0, libxkbcommon0, libfontconfig1, libfreetype6, libpixman-1-0, libutf8proc3
 Filename: pool/main/foot-git_amd64.deb
-Size: 379624
-MD5sum: f0ac5afb9e4d4e744a9df7a9d791e5db
-SHA1: a78c1bf0e693190736d6d574b30892feda553520
-SHA256: aaceac2777ad7b18d57414571ca1bafeaea3f86fc196bc5d10ac1c21263347c6
+Size: 379628
+MD5sum: 9d93be735e06f696c9c26e203a8bd0d6
+SHA1: 7f5a63560b09a4288abec235d60d5204220ce353
+SHA256: 5a8f0992f2e1a69d08867011ed9a6287a19e3b5e73eb49c0629dee1656b22752
 Section: x11
 Priority: optional
 Description: A fast, lightweight and minimalistic Wayland terminal emulator (git version)
