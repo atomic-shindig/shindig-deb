@@ -1,28 +1,29 @@
-name: Release Foot (Git) Debian Package
 
+name: Release Homebrew Debian Package
+ 
 permissions:
   contents: write
 
 concurrency:
   group: gh-pages-deploy
   cancel-in-progress: false
-
+ 
 on:
   workflow_dispatch:
   push:
     branches:
       - main
   schedule:
-    - cron: '15 9 */17 * *'
-
+    - cron: '15 9 */14 * *'
+ 
 jobs:
-  release-foot:
+  release-homebrew:
     uses: ./.github/workflows/reusable.yml
     with:
-      containerfile: pkgs/foot-git.Containerfile
-      package_name: foot-git
-      origin: jumpyvi
-      label: FootGit-Deb
+      containerfile: pkgs/homebrew.Containerfile
+      package_name: homebrew
+      origin: shindig
+      label: shindig
       suite: stable
       codename: stable
       architecture: amd64

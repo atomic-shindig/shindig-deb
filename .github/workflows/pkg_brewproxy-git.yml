@@ -1,5 +1,5 @@
 
-name: Release Bootc Debian Package
+name: Release Brew Proxy (git) Debian Package
  
 permissions:
   contents: write
@@ -17,11 +17,11 @@ on:
     - cron: '15 9 */14 * *'
  
 jobs:
-  release-bootc:
+  release-brewproxy:
     uses: ./.github/workflows/reusable.yml
     with:
-      containerfile: pkgs/bootc.Containerfile
-      package_name: bootc
+      containerfile: pkgs/brewproxy-git.Containerfile
+      package_name: brewproxy-git
       origin: shindig
       label: shindig
       suite: stable

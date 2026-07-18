@@ -1,27 +1,26 @@
+name: Release Foot (Git) Debian Package
 
-name: Release Bootc Debian Package
- 
 permissions:
   contents: write
 
 concurrency:
   group: gh-pages-deploy
   cancel-in-progress: false
- 
+
 on:
   workflow_dispatch:
   push:
     branches:
       - main
   schedule:
-    - cron: '15 9 */14 * *'
- 
+    - cron: '15 9 */17 * *'
+
 jobs:
-  release-bootc:
+  release-foot:
     uses: ./.github/workflows/reusable.yml
     with:
-      containerfile: pkgs/bootc.Containerfile
-      package_name: bootc
+      containerfile: pkgs/foot-git.Containerfile
+      package_name: foot-git
       origin: shindig
       label: shindig
       suite: stable

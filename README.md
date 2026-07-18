@@ -19,7 +19,7 @@ Check https://github.com/jumpyvi/ubuntu-bootc-remix for a ready-made Bootc Ubunt
 
 https://bootc.dev/
 
-> Compatible with >= debian:sid or >= ubuntu:questing
+> Compatible with sid/questing and newer
 
 `sudo apt-get install bootc`
 
@@ -29,11 +29,28 @@ Latest bootc release archive from gitlab
 
 https://codeberg.org/dnkl/foot
 
-> Compatible with >= debian:trixie or >= ubuntu:questing
+> Compatible with trixie/questing and newer
 
 `sudo apt-get install foot-git`
 
 ## Homebrew
-...
+
+https://github.com/ublue-os/brew
+
+> Compatible with trixie/questing and newer
+
+`sudo apt-get install homebrew`
+
 
 ## BrewProxy (git)
+
+https://codeberg.org/HastD/brew-proxy
+
+> Compatible with trixie/questing and newer
+
+`sudo apt-get install brewproxy-git`
+
+
+# Thanks
+
+Homebrew packages adapted from https://github.com/Lumaeris/homebrew-arch
