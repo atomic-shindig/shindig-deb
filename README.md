@@ -25,10 +25,15 @@ https://bootc.dev/
 
 Latest bootc release archive from gitlab
 
-## Foot
+## Foot (git)
 
 https://codeberg.org/dnkl/foot
 
 > Compatible with >= debian:trixie or >= ubuntu:questing
 
 `sudo apt-get install foot-git`
+
+## Homebrew
+...
+
+## BrewProxy (git)
